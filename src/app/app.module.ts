@@ -8,6 +8,7 @@ import { SearchBarComponent } from './search-bar/search-bar.component';
 import { FiltersComponent } from './filters/filters.component';
 import { ShowcaseComponent } from './showcase/showcase.component';
 import { CartComponent } from './cart/cart.component';
+import { CompareComponent } from './compare/compare.component';
 import { ProductThumbnailComponent } from './product-thumbnail/product-thumbnail.component';
 import { SortFiltersComponent } from './sort-filters/sort-filters.component';
 
@@ -21,6 +22,7 @@ import { CartService } from './cart.service';
     FiltersComponent,
     ShowcaseComponent,
     CartComponent,
+    CompareComponent,
     ProductThumbnailComponent,
     SortFiltersComponent
   ],

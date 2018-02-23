@@ -28,4 +28,8 @@ export class ProductThumbnailComponent implements OnInit {
     this.cartService.addProductToCart(this.product);
   }
 
+  onAddToCompare() {
+    this.cartService.addProductToCompare(this.product);
+  }
+
 }

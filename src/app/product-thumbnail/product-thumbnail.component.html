@@ -10,12 +10,18 @@
       <div class="available" *ngIf='product.available'>
         <hr>
         <div class="row">
-          <div class="col-8-sm view-details-wrapper">
-            <button type="button" class="view" (click)='onProductClick()'>View details</button>
+          <div class="col-5-sm view-details-wrapper">
+            <button type="button" class="view" (click)='onProductClick()'>Details</button>
           </div>
-          <div class="col-4-sm add-cart-wrapper">
+          <div class="col-2-sm add-cart-wrapper">
             <button type="button" class="cart" (click)="onAddToCart()"><img src="../../assets/cart_primary.svg" alt="" /></button>
           </div>
+          <div class="col-5-sm add-compare-wrapper">
+            <button type="button" class="view" (click)="onAddToCompare()">Compare</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class=""></div>
         </div>
       </div>
       <div class="not-available" *ngIf='!product.available'>
