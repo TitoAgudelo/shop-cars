@@ -1,0 +1,34 @@
+<div class="main-container">
+  <div class="">
+    <div class="row">
+      <div class="col-3">
+        <div class="filters-wrapper">
+          <app-cart></app-cart>
+          <app-filters #filtersComponent [categories]='originalData.categories' [customFilters]='customFilters' [priceFilters]='priceFilters' (onFilterChange)='onFilterChange($event)'></app-filters>
+        </div>
+      </div>
+      <div class="col-9">
+        <div class="row">
+          <div class="col-8">
+            <div class="sort-filters-wrapper">
+              <app-sort-filters [filters]='sortFilters' (onSortChange)='sortProducts($event)'></app-sort-filters>
+            </div>
+          </div>
+          <div class="col-4">
+            <app-search-bar  #searchComponent (onSearchChange)='onSearchChange($event)'></app-search-bar>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <app-showcase [products]='products'></app-showcase>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
